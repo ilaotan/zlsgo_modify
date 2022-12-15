@@ -1,4 +1,4 @@
-module github.com/sohaha/zlsgo
+module github.com/ilaotan/zlsgo_modify
 
 go 1.18
 
