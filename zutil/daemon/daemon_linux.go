@@ -241,8 +241,8 @@ Description={{.Description}}
 ConditionFileIsExecutable={{.Path|cmdEscape}}
 
 [Service]
-StartLimitInterval=5
-StartLimitBurst=10
+StartLimitInterval=10
+StartLimitBurst=8640
 ExecStart={{.Path|cmdEscape}}{{range .Arguments}} {{.|cmd}}{{end}}
 {{if .RootDir}}RootDirectory={{.RootDir|cmd}}{{end}}
 {{if .WorkingDir}}WorkingDirectory={{.WorkingDir|cmdEscape}}{{end}}
